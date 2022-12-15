@@ -1,0 +1,3 @@
+- This file is a practice page for learning GitHub
+- It is about being patient as the Bible teaches
+- It is for all to read and learn from 
