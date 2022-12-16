@@ -3,4 +3,29 @@ h1 {
     letter-spacing: 0.1em;
     word-spacing: 0.2em;
     text-decoration: underline;
-   }
+}
+
+.shown, .shown1, .shown2 {
+	display: none;
+}
+
+.shown3, .shown4, .shown5 {
+	display: none;
+}
+
+.shown6, .shown7, .shown8 {
+	display: none;
+}
+
+.shown9, .shown10, .shown11 {
+	display: none;
+}
+
+.shown12, .shown13, .shown14 {
+	display: none;
+}
+
+.shown15 {
+	display: none;
+}
+	
