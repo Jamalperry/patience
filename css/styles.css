@@ -1,31 +1,77 @@
 h1 {
-    color: grey
-    letter-spacing: 0.1em;
-    word-spacing: 0.2em;
-    text-decoration: underline;
+  color: grey letter-spacing: 0.1em;
+  word-spacing: 0.2em;
+  text-decoration: underline;
 }
 
-.shown, .shown1, .shown2 {
-	display: none;
+.shown,
+.shown1,
+.shown2 {
+  display: none;
 }
 
-.shown3, .shown4, .shown5 {
-	display: none;
+.shown3,
+.shown4,
+.shown5 {
+  display: none;
 }
 
-.shown6, .shown7, .shown8 {
-	display: none;
+.shown6,
+.shown7,
+.shown8 {
+  display: none;
 }
 
-.shown9, .shown10, .shown11 {
-	display: none;
+.shown9,
+.shown10,
+.shown11 {
+  display: none;
 }
 
-.shown12, .shown13, .shown14 {
-	display: none;
+.shown12,
+.shown13,
+.shown14 {
+  display: none;
 }
 
-.shown15 {
-	display: none;
+.shown15, .shownHeader {
+  display: none;
 }
-	
+
+.shownHeader {
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 100%;
+}
+
+/*blessings.html page styles*/
+
+h2 {
+  white-space: pre-wrap;
+}
+
+p {
+  white-space: pre-wrap;
+}
+
+p1 {
+  white-space: pre-wrap;
+}
+
+.card {
+  margin: 10% auto;
+}
+
+.grids {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.grids>i {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 15%;
+  margin: 5%;
+  font-size: 20px;
+}
