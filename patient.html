@@ -4,13 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Felipa&family=Fleur+De+Leah&family=Pinyon+Script&display=swap" rel="stylesheet">
+
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
   <script src="js/jquery-3.4.1.js"></script>
   <script src="js/scripts.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-  <title>Patient</title>
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+  <title>The Patient</title>
   <style>
     body {
       background-image: url('img/bg1.jpg');
@@ -22,9 +28,68 @@
       background-size: cover;
     }
 
+header h1 {
+	 font-family: 'Pinyon Script', 'Lora', 'Lato', 'Georgia', cursive;
+	font-size: 1.3em;
+	white-space: pre-wrap;
+	text-decoration: none;
+	}
+
     .jumbotron {
-      rgba(255, 255, 255, 0.8);
+      background-color: rgba(255, 255, 255, 0.8);
+border: 3px solid white;
     }
+
+   h1 {
+	font-family: 'Fleur De Leah', 'Lora', 'Lato', 'Georgia', cursive;
+	white-space: pre-wrap;
+	font-size: 3.6em;
+}
+
+h2 {
+color: #264026;
+	font-size: 1.6em;
+	font-family: 'Felipa', 'Lora', 'Lato', 'Georgia', cursive;
+}
+
+p {
+color: #474747;
+	font-family: 'Cormorant Garamond', 'Lora', 'Lato', 'Georgia', cursive;
+	font-size: 1.3em;
+}
+
+    .card {
+      background: transparent;
+	border: 2px solid white;
+    }
+
+    b {
+	color: orange;
+    }
+
+  .btn-secondary {
+	background-color: rgba(128, 102, 77, 0.55);
+	font-family: 'Cormorant Garamond', 'Lora', 'Lato', 'Georgia', cursive;
+	font-style: italic;
+	letter-spacing: 0.1em;
+	word-spacing: 0.4em;
+}
+
+.imgPng {
+	width:18%; 
+	margin: 5% auto; 
+	background-color: rgba(19, 134, 57, 0.4); 
+	border-radius: 50%;
+	border: 1px solid orange;
+}
+
+.imgHeader {
+	width:23%; 
+	margin: 1% auto; 
+	background-color: ;
+	border-radius: 50%;
+	border: 0px solid orange;
+}
   </style>
 </head>
 
@@ -32,13 +97,14 @@
   <header class="#">
     <div class="text-center grids">
       <div class="column clickerHeader">
-        <i class="fa fa-bars" style="font-size:24px; color: black;"></i>
+        <i class="fa fa-bars" style="font-size:24px; color: rgb(128, 102, 77); text-shadow: 0px 0px 2px grey;"></i>
       </div>
       <div class="column">
-        <i class="#">Blessings</i>
+ <img class="imgHeader img-circle img-responsive" src="img/egret2.png" alt="Card image" style="width: 12%;">
+  <h1 class="#">The Patient</h1>
       </div>
       <div class="column">
-        <a href="index.html"><i class="fa fa-home" style="font-size:24px; color: black;"></i></a>
+        <a href="index.html"><i class="fa fa-home" style="font-size:24px; color: rgb(128, 102, 77); text-shadow: 0px 0px 2px grey;"></i></a>
       </div>
     </div>
   </header>
@@ -64,8 +130,145 @@
       </a>
     </ol>
     <div class="jumbotron">
+
+	<h1>The Patient</h1>
+	
+	</div>
+	
+    <div class="jumbotron">
+
+  <div class="card img-fluid" style="width: 100%;">
+    <img class="card-img-top" src="img/pic2.jpg" alt="Card image" style="width:80%; margin: 5% auto; border: 3px solid white;">
+    <div class="card-body">
+      <h2 class="card-title">The patient in spirit is better than the proud in spirit</h2>
+ <img class="imgHeader img-circle img-responsive" src="img/egret2.png" alt="Card image" style="width: 19%;">
+      <p class="card-text">Better is the end of a thing than the beginning of it, 
+and <b class="#">the patient in spirit is better than the proud in spirit</b>.
+‭‭</p>
+      <a href="https://bible.com/bible/8/ecc.7.8.AMPC" class="btn btn-secondary">Ecclesiastes‬ ‭7‬:‭8‬ ‭AMPC‬‬</a>
     </div>
   </div>
+
+<div class="card img-fluid" style="width: 100%;">
+    <img class="card-img-top" src="img/pic2.jpg" alt="Card image" style="width:80%; margin: 5% auto; border: 3px solid white;">
+    <div class="card-body">
+      <h2 class="card-title">Patient persistence in well-doing brings blessings</h2>
+ <img class="imgHeader img-circle img-responsive" src="img/egret2.png" alt="Card image" style="width: 19%;">
+      <p class="card-text">For He will render to every man according to his works [justly, as his deeds deserve]: [Ps. 62:12.] 
+<b class="#">To those who by patient persistence in well-doing [springing from piety]
+seek [unseen but sure] glory and honor and [the eternal blessedness of] immortality, 
+He will give eternal life</b>.
+‭‭</p>
+      <a href="https://bible.com/bible/8/rom.2.6-7.AMPC" class="btn btn-secondary">Romans‬ ‭2‬:‭6‬-‭7‬ ‭AMPC‬‬</a>
+    </div>
+  </div>
+
+<div class="card img-fluid" style="width: 100%;">
+    <img class="card-img-top" src="img/pic2.jpg" alt="Card image" style="width:80%; margin: 5% auto; border: 3px solid white;">
+    <div class="card-body">
+      <h2 class="card-title">Be patient in suffering and tribulation</h2>
+ <img class="imgHeader img-circle img-responsive" src="img/egret2.png" alt="Card image" style="width: 19%;">
+      <p class="card-text">Rejoice and exult in hope; 
+<b class="#">be steadfast and patient in suffering and tribulation</b>; 
+be constant in prayer.
+‭‭</p>
+      <a href="https://bible.com/bible/8/rom.12.12.AMPC" class="btn btn-secondary">Romans‬ ‭12‬:‭12‬ ‭AMPC‬‬</a>
+    </div>
+  </div>
+
+<div class="card img-fluid" style="width: 100%;">
+    <img class="card-img-top" src="img/pic2.jpg" alt="Card image" style="width:80%; margin: 5% auto; border: 3px solid white;">
+    <div class="card-body">
+      <h2 class="card-title">Be very patient with everybody </h2>
+ <img class="imgHeader img-circle img-responsive" src="img/egret2.png" alt="Card image" style="width: 19%;">
+      <p class="card-text">And we earnestly beseech you, brethren, admonish (warn and seriously advise) those who are out of line [the loafers, the disorderly, and the unruly]; 
+encourage the timid and fainthearted, 
+help and give your support to the weak souls, 
+<b class="#">[and] be very patient with everybody [always keeping your temper]</b>. [Isa. 35:4.]
+</p>
+      <a href="https://bible.com/bible/8/1th.5.14.AMPC" class="btn btn-secondary">‭‭1 Thessalonians‬ ‭5‬:‭14‬ ‭AMPC‬‬</a>
+    </div>
+  </div>
+
+<div class="card img-fluid" style="width: 100%;">
+    <img class="card-img-top" src="img/pic2.jpg" alt="Card image" style="width:80%; margin: 5% auto; border: 3px solid white;">
+    <div class="card-body">
+      <h2 class="card-title">The Lord will direct into the patience of Christ </h2>
+ <img class="imgHeader img-circle img-responsive" src="img/egret2.png" alt="Card image" style="width: 19%;">
+      <p class="card-text">And we have confidence in the Lord concerning you, that you are doing and will continue to do the things which we suggest and with which we charge you. 
+<b class="#">May the Lord direct your hearts into [realizing and showing] the love of God 
+and into the steadfastness and patience of Christ and in waiting for His return</b>.
+</p>
+      <a href="https://bible.com/bible/8/2th.3.5.AMPC" class="btn btn-secondary">‭‭2 Thessalonians‬ ‭3‬:‭4‬-‭5‬ ‭AMPC‬‬</a>
+    </div>
+  </div>
+
+<div class="card img-fluid" style="width: 100%;">
+    <img class="card-img-top" src="img/pic2.jpg" alt="Card image" style="width:80%; margin: 5% auto; border: 3px solid white;">
+    <div class="card-body">
+      <h2 class="card-title">Bishops to be patient</h2>
+ <img class="imgHeader img-circle img-responsive" src="img/egret2.png" alt="Card image" style="width: 19%;">
+      <p class="card-text">Now a bishop (superintendent, overseer) must give no grounds for accusation but must be above reproach, the husband of one wife, circumspect and temperate and self-controlled; [he must be] sensible and well behaved and dignified and lead an orderly (disciplined) life; [he must be] hospitable [showing love for and being a friend to the believers, especially strangers or foreigners, and be] a capable and qualified teacher, 
+Not given to wine, not combative but gentle and considerate, not quarrelsome 
+but <b class="#">forbearing and peaceable</b>, 
+and not a lover of money [insatiable for wealth and ready to obtain it by questionable means].
+</p>
+      <a href="https://bible.com/bible/8/1ti.3.2-3.AMPC" class="btn btn-secondary">‭‭1 Timothy‬ ‭3‬:‭2‬-‭3‬ ‭AMPC‬‬</a>
+    </div>
+  </div>
+
+<div class="card img-fluid" style="width: 100%;">
+    <img class="card-img-top" src="img/pic2.jpg" alt="Card image" style="width:80%; margin: 5% auto; border: 3px solid white;">
+    <div class="card-body">
+      <h2 class="card-title">Servants are to be patient</h2>
+ <img class="imgHeader img-circle img-responsive" src="img/egret2.png" alt="Card image" style="width: 19%;">
+      <p class="card-text">And the servant of the Lord must not be quarrelsome (fighting and contending). 
+Instead, he must be kindly to everyone and mild-tempered [preserving the bond of peace]; he must be a skilled and suitable teacher, <b class="#">patient and forbearing</b> and willing to suffer wrong. 
+He must correct his opponents with courtesy and gentleness, in the hope that God may grant that they will repent and come to know the Truth [that they will perceive and recognize and become accurately acquainted with and acknowledge it], 
+And that they may come to their senses [and] escape out of the snare of the devil, having been held captive by him, [henceforth] to do His [God's] will.
+</p>
+      <a href="https://bible.com/bible/8/2ti.2.24-26.AMPC" class="btn btn-secondary">‭‭2 Timothy‬ ‭2‬:‭24‬-‭26‬ ‭AMPC‬‬‬‬</a>
+    </div>
+  </div>
+
+<div class="card img-fluid" style="width: 100%;">
+    <img class="card-img-top" src="img/pic2.jpg" alt="Card image" style="width:80%; margin: 5% auto; border: 3px solid white;">
+    <div class="card-body">
+      <h2 class="card-title">Be patient till the coming of the Lord</h2>
+ <img class="imgHeader img-circle img-responsive" src="img/egret2.png" alt="Card image" style="width: 19%;">
+      <p class="card-text"><b class="#">So be patient, brethren, [as you wait] till the coming of the Lord</b>. 
+See how the farmer waits expectantly for the precious harvest from the land. 
+[See how] he keeps up his patient [vigil] over it until it receives the early and late rains. 
+<b class="#">So you also must be patient. 
+Establish your hearts [strengthen and confirm them in the final certainty], for the coming of the Lord is very near</b>. 
+Do not complain, brethren, against one another, so that you [yourselves] may not be judged. 
+Look! The Judge is [already] standing at the very door. [As] an example of suffering and ill-treatment together with patience, brethren, take the prophets who spoke in the name of the Lord [as His messengers].
+</p>
+      <a href="https://bible.com/bible/8/jas.5.7-9.AMPC" class="btn btn-secondary">James‬ ‭5‬:‭7‬-‭10‬ ‭AMPC‬‬</a>
+    </div>
+  </div>
+
+    </div>
+  </div>
+
+	<footer>
+	    <p2 class="text-center">Scripture quotations taken from the Amplified® Bible (AMPC),
+      Copyright © 1954, 1958, 1962, 1964, 1965, 1987 by The Lockman Foundation
+      Used by permission. <a href="https://www.lockman.org/">www.lockman.org</a></p2>
+
+<div class="text-center ImgCredits">
+
+<p2 class="#">Image Credits</p2>
+
+	    <p3>Photo by<a href="https://unsplash.com/photos/gew8vEee96U?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"> Harshit Mishra on Unsplash.com</a></p3>
+	<p3 class="#">Photo by <a href="https://unsplash.com/photos/P0NIoJzwil0?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Matt Bango on Unsplash.com</a></p3>
+	
+	 <img class="imgPng img-circle img-responsive" src="img/egret2.png" alt="Card image" style="width: 13%;">
+	
+	</div>
+	
+	</footer>
+
 </body>
 
 </html>
