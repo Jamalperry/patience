@@ -69,7 +69,8 @@ header .column i {
   display: none;
 }
 
-.shown15, .shownHeader {
+.shown15,
+.shownHeader {
   display: none;
 }
 
