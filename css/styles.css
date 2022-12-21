@@ -1,15 +1,38 @@
-
 h1 {
-  color: grey;
-  letter-spacing: 0.1em;
+  color: #000;
   word-spacing: 0.2em;
-  text-decoration: underline;
+  margin-bottom: 15%;
 }
 
 header {
   background-color: rgba(255, 255, 255, 0.8);
   border-bottom: 2px solid #000;
   margin-bottom: 10%;
+}
+
+p2 {
+  color: grey;
+  padding: 1%;
+  margin: 2%;
+  font-size: 0.7em;
+  display: block;
+}
+
+p3 {
+  color: grey;
+  padding: 1%;
+  font-size: 0.5em;
+  display: block;
+}
+
+footer {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-top: 2px solid #000;
+  margin-top: 10%;
+}
+
+header .column i {
+  padding: 10%;
 }
 
 header .column i {
