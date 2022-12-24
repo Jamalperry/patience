@@ -33,7 +33,7 @@
       font-size: 1.3em;
       white-space: pre-wrap;
       text-decoration: none;
-      margin: 0%;
+      margin: 1%;
       padding: 0%;
     }
 
@@ -88,11 +88,11 @@
     }
 
     .btn-secondary {
-      background-color: rgba(0, 0, 0, 0.3);
+      background-color: rgba(0, 0, 0, 0.03);
       font-family: 'Cormorant Garamond', 'Lora', 'Lato', 'Georgia', cursive;
       font-style: italic;
-      letter-spacing: 0.1em;
       word-spacing: 0.4em;
+      border: 1px solid white;
     }
 
     .imgPng {
@@ -106,7 +106,7 @@
     .imgHeader {
       background-color: rgba(0, 0, 0, 1);
       width: 23%;
-      margin: 0 auto;
+      margin: 3% auto;
       background-color: ;
       border-radius: 50%;
       border: 0px solid orange;
@@ -114,6 +114,26 @@
 
     .card-img-top {
       display: block;
+    }
+    
+    a {
+      margin: 5%;
+    }
+    
+    @media screen and (min-width: 501px) {
+      .imgHeader {
+        width: 7%;
+      }
+      
+      header h1 {
+        font-size: 2.1em;
+      }
+    }
+    
+    @media screen and (max-width: 500px) {
+      .imgHeader {
+        width: 13%;
+      }
     }
   </style>
 </head>
@@ -125,7 +145,7 @@
         <i class="fa fa-bars" style="font-size:24px; color: black;"></i>
       </div>
       <div class="column">
-        <img class="imgHeader img-circle img-responsive" src="img/egret4.png" alt="Card image" style="width: 13%;">
+        <img class="imgHeader img-circle img-responsive" src="img/egret4.png" alt="Card image" style="#">
         <h1 class="#">Blessings</h1>
       </div>
       <div class="column">
@@ -174,7 +194,7 @@
           <h3 class="card-title clicker1">Individual knowledge of all that pertains unto life and godliness</h3>
           <p class="card-text shown1">But let endurance and steadfastness and <b class="#">patience</b> have full play and do a thorough work,
             so that you may be [people] perfectly and fully developed [with no defects], lacking in nothing.</p>
-          <a href="https://bible.com/bible/8/jas.1.4.AMPC" class="btn btn-secondary">James‬ ‭1‬:‭4‬ ‭AMPC</a><br />
+          <a href="https://bible.com/bible/8/jas.1.4.AMPC" class="btn btn-secondary">James‬ ‭1‬:‭4‬ ‭AMPC</a>
           <a href="https://bible.com/bible/8/php.3.15.AMPC" class="btn btn-secondary">Philippians‬ ‭3‬:‭15‬ ‭AMPC‬‬</a>
         </div>
         <div class="card-footer shown1">
