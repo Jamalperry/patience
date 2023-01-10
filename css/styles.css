@@ -115,3 +115,7 @@ iframe {
   margin: 0%;
   border-radius: 8%;
 }
+
+.shown1 p {
+  overflow-y: scroll;
+}
