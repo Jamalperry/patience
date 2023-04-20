@@ -26,6 +26,7 @@
     .jumbotron {
       background-color: rgba(255, 255, 255, 0.8);
       border: 3px solid white;
+      box-shadow: 2px 2px 4px black;
     }
 
     header h1 {
@@ -60,6 +61,12 @@
       white-space: pre-wrap;
     }
 
+    h2 a {
+      color: grey;
+      word-spacing: 3px;
+      font-size: 1em;
+    }
+
     p {
       color: #474747;
       font-family: 'Cormorant Garamond', 'Lora', 'Lato', 'Georgia', cursive;
@@ -82,6 +89,7 @@
     .card {
       background: transparent;
       border: 2px solid white;
+      box-shadow: 2px 2px 4px grey;
     }
 
     b {
@@ -94,6 +102,7 @@
       font-style: italic;
       word-spacing: 0.4em;
       border: 1px solid white;
+      box-shadow: 2px 2px 4px grey;
     }
 
     .imgPng {
@@ -121,6 +130,12 @@
       margin: 5%;
     }
 
+    h2::first-letter {
+      font-family: 'Fleur De Leah', 'Lora', 'Lato', 'Georgia', cursive;
+      font-size: 40px;
+      padding: 1%;
+    }
+
     @media screen and (min-width: 501px) {
       .imgHeader {
         width: 7%;
@@ -142,15 +157,15 @@
 <body>
   <header class="#" id="top">
     <div class="text-center grids">
-      <div class="column clickerHeader">
-        <i class="fa fa-bars" style="font-size:24px; color: black;"></i>
+      <div style="margin: 15%;" class="column clickerHeader">
+        <i class="fa fa-bars" style="font-size:28px; color: black;"></i>
       </div>
       <div class="column">
         <img class="imgHeader img-circle img-responsive" src="img/egret4.png" alt="Card image" style="#">
         <h1 class="#">Blessings</h1>
       </div>
-      <div class="column">
-        <a href="index.html"><i class="fa fa-home" style="font-size:24px; color: black;"></i></a>
+      <div style="margin: 15%;" class="column">
+        <a href="index.html"><i class="fa fa-home" style="font-size:28px; color: black;"></i></a>
       </div>
     </div>
   </header>
@@ -184,77 +199,103 @@
     </a>
   </ol>
   <div class="container text-center">
-    <div class="jumbotron">
-      <h1>Blessings of Patience</h1>
-    </div>
-    <div class="jumbotron">
-      <h2 class="mainVerse">But let endurance and steadfastness and patience have full play and do a thorough work,
-        so that you may be [people] perfectly and fully developed [with no defects], lacking in nothing.‬‭‭
-        <a href="https://bible.com/bible/8/jas.1.4.AMPC">James‬ ‭1‬:‭4‬ ‭AMPC</a>
-      </h2>
-    </div>
-    <div class="jumbotron">
-      <div class="card">
-        <div class="card-body">
-          <h3 class="card-title clicker1">Individual knowledge of all that pertains unto life and godliness</h3>
-          <p class="card-text shown1">But let endurance and steadfastness and <b class="#">patience</b> have full play and do a thorough work,
-            so that you may be [people] perfectly and fully developed [with no defects], lacking in nothing.</p>
-          <a href="https://bible.com/bible/8/jas.1.4.AMPC" class="btn btn-secondary">James‬ ‭1‬:‭4‬ ‭AMPC</a>
-          <a href="https://bible.com/bible/8/php.3.15.AMPC" class="btn btn-secondary">Philippians‬ ‭3‬:‭15‬ ‭AMPC‬‬</a>
+    <div class="row">
+      <div class="col-md-2 col-lg-2">
+      </div>
+      <div class="col-md-8 col-lg-8">
+        <div class="jumbotron">
+          <h1>Blessings of Patience</h1>
         </div>
-        <div class="card-footer shown1">
-          <h3 class="#">Notes</h3>
-          <p1 class="#"><i class="#">perfect</i> - Gr. <a href="https://www.blueletterbible.org/lexicon/g5046/kjv/tr/rl1/ss1/0-1">téleios</a>, to be complete, mature
-          </p1>
-          <p1 class="#">
-            So let those [of us] who are spiritually mature and full-grown have this mind and hold these convictions; and if in any respect you have a different attitude of mind, God will make that clear to you also.
-            ‭‭<a href="https://bible.com/bible/8/php.3.15.AMPC">Philippians‬ ‭3‬:‭15‬ ‭AMPC‬‬</a>
-          </p1>
+        <div class="jumbotron">
+          <h2 class="mainVerse">But let <b class="text">endurance</b> and
+            <b class="text">steadfastness</b> and
+            <b class="text">patience</b>
+            have
+            full play and
+            <b class="text">do a thorough work</b>,
+            so that you may be [people]
+            <b class="text">perfectly</b> and <b class="text">fully developed</b>
+            [with no defects],
+            lacking in nothing.‬‭‭
+            <a href="https://bible.com/bible/8/jas.1.4.AMPC">James‬ ‭1‬:‭4‬ ‭AMPC</a>
+          </h2>
+        </div>
+        <div class="jumbotron">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title clicker1">Individual knowledge of all that pertains unto life and godliness</h3>
+              <p class="card-text shown1">
+                But let endurance and steadfastness and patience have full play and do a thorough work,
+                <b class="text">so that you may be [people] perfectly and fully developed
+                  [with no defects],
+                  lacking in nothing</b>.</p>
+              <a href="https://bible.com/bible/8/jas.1.4.AMPC" class="btn btn-secondary">James‬ ‭1‬:‭4‬ ‭AMPC</a>
+              <a href="https://bible.com/bible/8/php.3.15.AMPC" class="btn btn-secondary">Philippians‬ ‭3‬:‭15‬ ‭AMPC‬‬</a>
+            </div>
+            <div class="card-footer">
+              <h3 class="clicker1">Notes</h3>
+              <p1 class="shown1"><i class="#">perfect</i> - Gr.téleios, Strongs <a href="https://www.blueletterbible.org/lexicon/g5046/kjv/tr/rl1/ss1/0-1">G5046</a>to be complete, mature ...
+              </p1>
+              <p1 class="shown1">
+                So let those [of us] who are <u class="text">spiritually mature and full-grown</u> have this mind and hold these convictions;
+                and if in any respect you have a different attitude of mind,
+                God will make that clear to you also.
+                <a href="https://bible.com/bible/8/php.3.15.AMPC">Philippians‬ ‭3‬:‭15‬ ‭AMPC‬‬</a>
+              </p1>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title clicker2">Entire or complete in needs for godliness and life</h3>
+              <p class="card-text shown2">But let endurance and steadfastness and patience have full play and do a thorough work, so that you may be [people] <b class="#">perfectly and fully developed
+                  [with no defects],
+                  lacking in nothing</b>.</p>
+              <a href="https://bible.com/bible/8/jas.1.4.AMPC" class="btn btn-secondary">James‬ ‭1‬:‭4‬ ‭AMPC</a>
+              <a href="https://bible.com/bible/8/1th.5.23.AMPC" class="card-link btn btn-secondary">1 Thessalonians‬ ‭5‬:‭23‬ ‭AMPC‬‬‬‬</a>
+            </div>
+            <div class="card-footer">
+              <h3 class="clicker2">Notes</h3>
+              <p1 class="shown2"><i class="#">entire</i> - Gr. holoklēros, Strong's <a href="https://www.blueletterbible.org/lexicon/g3648/kjv/tr/0-1/">G3648</a>, complete in every part, entire
+              </p1>
+              <p1 class="shown2">
+                And may the God of peace Himself sanctify you through and through [separate you from profane things, make you pure and wholly consecrated to God];
+                and <u class="text">may your spirit and soul and body
+                  be preserved sound and complete [and found] blameless
+                  at the coming of our Lord Jesus Christ (the Messiah)</u>.
+                <a href="https://bible.com/bible/8/1th.5.23.AMPC" class="card-link">‭‭1 Thessalonians‬ ‭5‬:‭23‬ ‭AMPC‬‬‬‬</a>
+              </p1>
+            </div>
+          </div>
+        </div>
+        <a href="#top" class="center-block" style="color: grey; font-size: 0.5em;">back to top</a>
+        <div class="jumbotron">
+          <img class="imgHeader clicker1 img-circle img-responsive" src="img/egret4.png" alt="Card image" style="width: 40%; margin: 10% auto; border: 3px solid white; background-color: black;">
+          <p class="clicker1">Read More</p>
+          <div class="shown1">
+            <p class="text-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+            </p>
+          </div>
+          <a href="#top" class="clicker1 center-block" style="color: grey; font-size: 0.5em;">back to top</a>
         </div>
       </div>
-      <div class="card">
-        <div class="card-body">
-          <h3 class="card-title clicker2">Entire or complete in needs for godliness and life</h3>
-          <p class="card-text shown2">But let endurance and steadfastness and <b class="#">patience</b> have full play and do a thorough work,
-            so that you may be [people] <b class="#">perfectly and fully developed</b> [with no defects], lacking in nothing.</p>
-          <a href="https://bible.com/bible/8/jas.1.4.AMPC" class="btn btn-secondary">James‬ ‭1‬:‭4‬ ‭AMPC</a>
-          <a href="https://bible.com/bible/8/1th.5.23.AMPC" class="card-link btn btn-secondary">1 Thessalonians‬ ‭5‬:‭23‬ ‭AMPC‬‬‬‬</a>
-        </div>
-        <div class="card-footer shown2">
-          <h3 class="#">Notes</h3>
-          <p1 class="#"><i class="#">entire</i> - Gr. holoklēros, Strong's <a href="https://www.blueletterbible.org/lexicon/g3648/kjv/tr/0-1/">G3648</a>, complete in every part, entire
-          </p1>
-          <p1 class="#">
-            And may the God of peace Himself sanctify you through and through [separate you from profane things, make you pure and wholly consecrated to God]; and may your spirit and soul and body be preserved sound and complete [and found] blameless at the coming of our Lord Jesus Christ (the Messiah).
-            <a href="https://bible.com/bible/8/1th.5.23.AMPC" class="card-link">‭‭1 Thessalonians‬ ‭5‬:‭23‬ ‭AMPC‬‬‬‬</a>
-          </p1>
-        </div>
+      <div class="col-md-2 col-lg-2">
       </div>
     </div>
-    <a href="#top" class="center-block" style="color: grey; font-size: 0.5em;">back to top</a>
-    <div class="jumbotron">
-      <img class="imgHeader clicker1 img-circle img-responsive" src="img/egret4.png" alt="Card image" style="width: 40%; margin: 10% auto; border: 3px solid white; background-color: black;">
-      <p class="clicker1">Read More</p>
-      <div class="shown1">
-        <p class="text-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-        </p>
-      </div>
-      <a href="#top" class="clicker1 center-block" style="color: grey; font-size: 0.5em;">back to top</a>
-    </div>
+    <!--row-->
   </div>
   <footer>
     <p2 class="text-center">Scripture quotations taken from the Amplified® Bible (AMPC),
       Copyright © 1954, 1958, 1962, 1964, 1965, 1987 by The Lockman Foundation
       Used by permission. <a href="https://www.lockman.org/">www.lockman.org</a></p2>
-    <div class="text-center ImgCredits">
-      <p2 class="#">Image Credits</p2>
-      <p3>Photo by <a href="https://unsplash.com/photos/azGCQxLdxDM?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Harshit Mishra on Unsplash.com</a></p3>
+    <div class="text-left ImgCredits">
+      <p2 class="text-center">Image Credits</p2>
+      <p3 class="#">Photo by <a href="https://unsplash.com/photos/azGCQxLdxDM?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Harshit Mishra on Unsplash.com</a></p3>
       <p3>Photo by<a href="https://unsplash.com/@razorsharp">R Sen on Unsplash.com</a></p3>
       <p3 class="#">Photo by <a href="https://unsplash.com/photos/pMlsmv90YHo?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">David Clode on Unsplash.com</a></p3>
-      <img class="imgPng img-circle img-responsive" src="img/egret6.png" alt="Card image" style="width: 13%;">
+      <img class="text-center imgPng img-circle img-responsive imp-pill center-block" src="img/egret6.png" alt="Card image" style="width: 13% auto;">
     </div>
   </footer>
 </body>
